@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contatti</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Contatti</h1>
+        </header>
+        <form action="#" method="post">
+            <section> 
+                <h2>Informazioni Anagrafiche</h2>
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cognome">Cognome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="codice-ficale">Codice Fiscale:</label>
+                <input type="text" id="codice-ficale" name="codice-ficale" required>
+
+                <label for="data-nascita">Data di Nascita:</label>
+                <input type="date" id="data-nascita" name="data-nascita" required>
+
+                <label for="luogo-nascita">Luogo di Nascita</label>
+                <input type="text" id="luogo-nascita" name="luogo-nascita" required>
+
+                <label for="indirizzo">Indirizzo:</label>
+                <input type="text" id="indirizzo" name="indirizzo" required>
+            </section>
+
+            <section>
+                <h2>Preferenze</h2>
+
+                <label>Assicurazione:</label>
+                <label for="assicurazione-primo">Primo Livello</label>
+                <input type="radio" id="assicurazione-primo" name="assicurazione" value="Primo Livello">
+
+                <label for="assicurazione-secondo">Secondo Livello</label>
+                <input type="radio" id="assicurazione-secondo" name="assicurazione" value="Secondo Livello">
+
+                <label for="assicurazione-terzo">Terzo Livello</label>
+                <input type="radio" id="assicurazione-terzo" name="assicurazione" value="Terzo Livello">
+
+                <label for="mezzo-preferito">Mezzo Preferito</label>
+                <select name="mezzo-preferito" id="mezzo-preferito" required>
+                    <option value="Automobile">Automobile</option>
+                    <option value="Moto">Moto</option>
+                    <option value="Bicicletta">Bicicletta</option>
+                    <option value="Monopattino">Monopattino</option>
+                </select>
+
+                <label>
+                    <input type="checkbox" name="automunito"> Automunito
+                </label> 
+
+                <label for="descrizione">Descrizione:</label>
+                <textarea name="descrizione" id="descrizione"></textarea>
+            </section>
+
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Cancella</button>
+            </div>
+        </form>
+    </body>
+</html>

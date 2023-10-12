@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>School Timetable</title>
+        
+        <style>
+            body.corpo-base {
+                font-family: Arial, sans-serif;
+                background-color: #ffffff;
+            }
+
+            h1.title-esercitazione {
+                text-align: center;
+                color: #333;
+                margin-bottom: 8px;
+                margin-top: 8px;
+            }
+
+            table.my-table {
+                width: 100%;
+                border-collapse: collapse;
+                background-color: #fff;
+                border: 1px solid #ccc;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            table.my-table caption {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2em;
+                padding: 10px;
+                background-color: #333;
+                color: #fff;
+            }
+
+            table.my-table th, table.my-table td, table.my-table .first-cell{
+                border: 1px solid #616161;
+                padding: 8px;
+                text-align: center;
+                font-family: Helvetica;
+                font-size: large;
+            }
+
+            table.my-table th, table.my-table .first-cell {
+                background-color: #d3d3d3;
+            }
+
+            table.my-table .first-cell {
+                text-align: center;
+            }
+            table.my-table th:first-child,
+            table.my-table td:first-child {
+                text-align: left;
+                font-weight: bold;
+            }
+
+            table.my-table th:hover, table.my-table td:hover {
+                background-color: beige;
+            }
+        </style>
+        <script src="https://kit.fontawesome.com/59ffa4c88e.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="corpo-base">
+
+        <h1 class="title-esercitazione">School Timetable</h1>
+
+        <table class="my-table">
+            <caption>
+                <i class="fa-regular fa-calendar"></i> Orario delle lezioni <i class="fa-regular fa-calendar"></i>
+            </caption>
+            <tr>
+                <td class="first-cell">Giorni <i class="fa-solid fa-arrow-right fa-beat" style="color: #000000;"></i><br>
+                Ore <i class="fa-solid fa-arrow-down fa-beat" style="color: #000000;"></i></td>
+                <th>Lunedì</th>
+                <th>Martedì</th>
+                <th>Mercoledì</th>
+                <th>Giovedì</th>
+                <th>Venerdì</th>
+            </tr>
+            <tr>
+                <th id="9-10">9-10</th>
+                <td rowspan="3" headers="9-10 10-11 11-12">Ricerca Operativa</td>
+                <td rowspan="3" headers="9-10 10-11 11-12">Ingegneria del <br>Software</br></td>
+                <td rowspan="3" headers="9-10 10-11 11-12">Sistemi Embedded</td>
+                <td rowspan="2" headers="9-10 10-11">Sistemi Embedded</td>
+            </tr>
+            <tr>
+                <th id="10-11">10-11</th>
+                <td rowspan="2" headers=" 10-11 11-12">Tecnologie Web</td>
+            </tr>
+            <tr>
+                <th id="11-12">11-12</th>
+            </tr>
+            <tr>
+                <th id="12-13">12-13</th>
+                <td colspan="5" headers="12-13">Pausa Pranzo</td>
+            </tr>
+            <tr>
+                <th id="13-14">13-14</th>
+                <td rowspan="3" headers="13-14 14-15 15-16">Reti di <br>Telecomunicazioni</br></td>
+                <td rowspan="3" headers="13-14 14-15 15-16">Tecnologie Web</td>
+                <td rowspan="2" headers="13-14 14-15">Ingegneria del <br>Software</br></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th id="14-15">14-15</th>
+                <td></td>
+                <td rowspan="3" headers="14-15 15-16 16-17">Ricerca Operativa</td>
+            </tr>
+            <tr>
+                <th id="15-16">15-16</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th id="16-17">16-17</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Esercitazione Tabella</title>
+    <style>
+        body.corpo-base {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        h1.title-esercitazione {
+            text-align: center;
+            color: #333;
+        }
+
+        table.my-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        table.my-table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+
+        table.my-table th, table.my-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        table.my-table th {
+            background-color: #f2f2f2;
+        }
+
+        table.my-table td {
+            background-color: #fff;
+        }
+
+        table.my-table th:first-child,
+        table.my-table td:first-child {
+            text-align: left;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="corpo-base">
+
+<h1 class="title-esercitazione">Esercitazione Tabella</h1>
+<table class="my-table">
+    <caption>
+        Orario delle lezioni
+    </caption>
+    <tr>
+        <td></td>
+        <th>Lunedì</th>
+        <th>Martedì</th>
+        <th>Mercoledì</th>
+    </tr>
+    <tr>
+        <th id="9-10">9-10</th>
+        <td rowspan="2" headers="9-10 10-11">Tecnologie Web</td>
+        <td>Analisi</td>
+        <td rowspan="2" headers="9-10 10-11">Sistemi Multimediali</td>
+    </tr>
+    <tr>
+        <th id="10-11">10-11</th>
+        <td rowspan="2" headers="10-11 11-12">Sistemi Multimediali</td>
+    </tr>
+    <tr>
+        <th id="11-12">11-12</th>
+        <td>Algebra</td>
+        <td>Fisica</td>
+    </tr>
+</table>
+
+</body>
+</html>
