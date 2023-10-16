@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="IT">
     <head>
         <title>Contatti</title>
         <meta charset="UTF-8">
@@ -10,31 +10,31 @@
             <h1>Contatti</h1>
         </header>
         <form action="#" method="post">
-            <section> 
+            <fieldset>
                 <h2>Informazioni Anagrafiche</h2>
 
                 <label for="nome">Nome:</label>
                 <input type="text" id="nome" name="nome" required>
                 <br>
                 <label for="cognome">Cognome:</label>
-                <input type="text" id="nome" name="nome" required>
+                <input type="text" id="cognome" name="cognome" required>
                 <br>
-                <label for="codice-ficale">Codice Fiscale:</label>
-                <input type="text" id="codice-ficale" name="codice-ficale" required>
+                <label for="codice-fiscale">Codice Fiscale:</label>
+                <input type="text" id="codice-fiscale" name="codice-fiscale" required>
                 <br>
                 <label for="data-nascita">Data di Nascita:</label>
                 <input type="date" id="data-nascita" name="data-nascita" required>
                 <br>
-                <label for="luogo-nascita">Luogo di Nascita</label>
+                <label for="luogo-nascita">Luogo di Nascita:</label>
                 <input type="text" id="luogo-nascita" name="luogo-nascita" required>
                 <br>
                 <label for="indirizzo">Indirizzo:</label>
                 <input type="text" id="indirizzo" name="indirizzo" required>
-            </section>
-
-            <section>
+            </fieldset>
+        
+            <fieldset>
                 <h2>Preferenze</h2>
-
+            
                 <label>Assicurazione:</label>
                 <label for="assicurazione-primo">Primo Livello</label>
                 <input type="radio" id="assicurazione-primo" name="assicurazione" value="Primo Livello">
@@ -47,24 +47,23 @@
                 <br>
                 <label for="mezzo-preferito">Mezzo Preferito</label>
                 <select name="mezzo-preferito" id="mezzo-preferito" required>
+                    <option value="" selected>-- Seleziona un'opzione --</option>
                     <option value="Automobile">Automobile</option>
                     <option value="Moto">Moto</option>
                     <option value="Bicicletta">Bicicletta</option>
                     <option value="Monopattino">Monopattino</option>
                 </select>
                 <br>
-                <label>
-                    <input type="checkbox" name="automunito"> Automunito
-                </label> 
+                <label for="automunito">Seleziona se sei automunito:</label>
+                <input type="checkbox" name="automunito" id="automunito">
                 <br>
                 <label for="descrizione">Descrizione:</label>
                 <textarea name="descrizione" id="descrizione"></textarea>
-            </section>
+            </fieldset>
 
-            <div>
-                <button type="submit">Submit</button>
-                <button type="reset">Cancella</button>
-            </div>
+            <button type="submit">Submit</button>
+        <button type="reset">Cancella</button>
+
         </form>
     </body>
 </html>
