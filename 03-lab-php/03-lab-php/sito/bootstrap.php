@@ -1,6 +1,5 @@
 <?php
 require_once("db/database.php");
-$dhb = new DatabaseHelper("localhot", "root", "", "blogtw", 3306);
-
-
+$dbh = new DatabaseHelper("localhost", "root", "", "blogtw", 3306);
+define("UPLOAD_DIR", "./upload");
 ?>
