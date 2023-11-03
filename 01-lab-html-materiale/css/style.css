@@ -11,10 +11,10 @@ body > header, body > aside > footer {
     background-color:rgb(54, 54, 54);
     text-align: center;
     color: white;
-    padding: 20px 0px;
+    padding: 20px 20px;
 }
 
-body > header > h1 {
+body>header>h1 {
     font-family: 'Courier New', Courier, monospace;
 }
 
