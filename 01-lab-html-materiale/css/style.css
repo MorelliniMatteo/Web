@@ -109,12 +109,12 @@ article > section {
     padding: 0 5%;
 }
 
-article footer {
+article>footer {
     text-align: right;
     padding: 20px 5%;
 }
 
-article > footer a {
+article>footer>a, form input[type="submit"] {
     background-color: #e4e4e4;
     border-radius: 5px;
     text-decoration: none;
@@ -127,6 +127,11 @@ form {
     padding: 20px 5%;
 }
 
+article>footer>a:hover, form input[type="submit"]:hover {
+    color:rgb(219, 69, 83);
+    cursor: pointer;
+}
+
 form ul li {
     margin-bottom: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -135,7 +140,26 @@ form ul li {
 form ul {
     list-style-type: none;
     width: 80%;
-    margin: 0 10%;
+    margin: 20 10% 0;
+}
+
+form li {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: inline-block;
+    width: 40%;
+}
+
+form li:last-child {
+    text-align: right;
+    margin-right: 10%;
+}
+
+form input:not([type="submit"]) {
+    width: 50%;
+    box-sizing: border-box;
 }
 
 form ul li input, label {
@@ -157,17 +181,17 @@ input[type="submit"] {
 form ul {
     list-style: none;
     width: 80%;
-    margin: 0 10%
+    margin: 0 10%;
 }
 
 aside {
     background-color: white;
-    margin: 0 5% 20px;
+    margin: 0 5% 120px;
     border: 1px solid #cacaca;
     box-sizing: border-box;
 }
 
-aside > section {
+aside>section {
     padding: 20px 5%;
 }
 
@@ -186,7 +210,7 @@ aside li {
     margin-bottom: 10px;
 }
 
-aside li > img {
+aside li>img {
     width: 50px;
     float: left;
     margin-right: 10px;
@@ -208,8 +232,12 @@ aside a:visited {
     color: purple;
 }
 
-body > footer {
+body>footer {
     font-family: 'Courier New', Courier, monospace;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
 }
 
 @media screen and (min-width: 768px) {
@@ -233,12 +261,11 @@ body > footer {
 
     main {
         width: 50%;
-        margin: 20px 5% 0 10%;
+        margin: 20px 5% 100px 10%;
     }
 
     aside {
         width: 25%;
         margin: 20px 10% 0 0;
     }
-
 }
