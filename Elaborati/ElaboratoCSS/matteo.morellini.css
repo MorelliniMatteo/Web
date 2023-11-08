@@ -39,7 +39,7 @@ nav ul {
     padding: 20px;
     line-height: 2;
     margin-left: 20px;
-    
+    text-align: left;
 }
 
 aside {
@@ -60,6 +60,8 @@ section {
 
 section>p {
     margin-bottom: 15px;
+    text-align: left;
+    color: black;
 }
 
 h1 {
@@ -70,7 +72,6 @@ footer {
     color: purple;
     background: linear-gradient(to top left, pink, yellow, pink, purple);
     padding: 20px 0;
-    margin: 10px 5px;
     text-align: center;
     border-top: 3px solid purple;
     width: 100%;
