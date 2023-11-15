@@ -1,5 +1,3 @@
-
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -24,10 +22,21 @@ section {
     margin: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
+
+section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Assicura il testo centrato all'interno del link */
+    margin-top: 10px; /* Modifica la distanza dal paragrafo sopra, se necessario */
+    text-decoration: none;
+  }
 
 h2 {
     color: #333;
+    text-align: center;
 }
 
 img {
@@ -36,23 +45,90 @@ img {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-a button {
-    background-color: #e91e63;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
+section a button {
+    width: 220px;
+    height: 50px;
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
+    outline: none;
+    color: #fff;
+    background: #111;
     cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+a button::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
 }
 
 a button:hover {
-    background-color: #d81b5a;
+    color: #ffffff
+}
+
+a button:active:after {
+    background: transparent;
+}
+
+a button:hover:before {
+    opacity: 1;
+}
+
+a button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+a button:active {
+    color: #000;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.info-personali p {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f0f0f0; /* Colore di sfondo più evidente */
+    margin-bottom: 10px; /* Aggiunge spazio tra i paragrafi */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+}
+
+.info-personali p:last-child {
+    margin-bottom: 0; /* Rimuove lo spazio dal paragrafo finale */
 }
 
 footer {
     text-align: center;
     margin-top: 20px;
     color: #777;
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        width: 50%;
+    }
 }
