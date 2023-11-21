@@ -1,0 +1,82 @@
+figure {
+    margin: 10%;
+    padding: 0;
+}
+
+form ul li label{
+    display: inline-block;
+    width: 50%;
+}
+
+form ul li input:not([type="submit"]){
+    display: inline-block;
+    width: 10%;
+    margin: 0;
+}
+
+figcaption{
+    background-color: rgb(0, 0, 255);
+    text-align: center;
+    color: #fff; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 1% 0;
+    display: table-caption;
+    caption-side: bottom;
+}
+
+figure {
+    display: table;
+}
+
+img {
+    width: 100%;
+}
+
+@media screen and (min-width:768px){
+
+    main {
+        padding: 0;
+        display: inline-block;
+        width: 79%;
+    }
+
+    aside {
+        padding: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 20%;
+    }
+
+    main > div {
+        display: inline-block;
+        width: 49%;
+    }
+
+}
+
+@media screen and (min-width:1080px){
+
+    main > div {
+        display: inline-block;
+        width: 33%;
+    }
+
+}
+
+@media screen and (min-width:1600px){
+
+    main > div {
+        display: inline-block;
+        width: 24.5%;
+    }
+
+}
+
+@media screen and (min-width:2160px){
+
+    main > div {
+        display: inline-block;
+        width: 19.9%;
+    }
+
+}

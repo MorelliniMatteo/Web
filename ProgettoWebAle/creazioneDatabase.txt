@@ -1,0 +1,76 @@
+CREATE DATABASE magazzino;
+use magazzino;
+
+CREATE TABLE Modello(
+    idModello int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50) NOT NULL,
+    descrizione varchar(1000) NOT NULL
+);
+
+CREATE TABLE Colore(
+    idColore int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50) NOT NULL
+);
+
+CREATE TABLE Genere(
+    idGenere int PRIMARY KEY AUTO_INCREMENT,
+    nome varchar(50) NOT NULL
+);
+
+CREATE TABLE Maglia(
+    idMaglia int PRIMARY KEY AUTO_INCREMENT,
+    idModello int NOT NULL,
+    idColore int NOT NULL,
+    idGenere int NOT NULL,
+    taglia varchar(10) NOT NULL,
+    dispMagazzino int NOT NULL,
+    vendite int NOT NULL DEFAULT 0,
+    prezzo float(7,2) NOT NULL,
+    immagineFronte varchar(80) NOT NULL,
+    immagineRetro varchar(80) NOT NULL,
+    FOREIGN KEY (idModello) REFERENCES Modello(idModello),
+    FOREIGN KEY (idColore) REFERENCES Colore(idColore),
+    FOREIGN KEY (idGenere) REFERENCES Genere(idGenere)
+);
+
+CREATE TABLE Account(
+    email varchar(50) PRIMARY KEY,
+    nome varchar(50) NOT NULL,
+    cognome varchar(50) NOT NULL,
+    password varchar(50) NOT NULL,
+    numeroTelefono varchar(10) NOT NULL,
+    admin boolean NOT NULL DEFAULT '0'
+);
+
+CREATE TABLE Ordine(
+    idOrdine int PRIMARY KEY AUTO_INCREMENT,
+    email varchar(50) NOT NULL,
+    dataPagamento datetime NOT NULL,
+    stato varchar(100) NOT NULL,
+    totale float(7,2) NOT NULL,
+    FOREIGN KEY (email) REFERENCES Account(email)
+);
+
+CREATE TABLE Maglia_in_carrello(
+    idRiga int PRIMARY KEY AUTO_INCREMENT,
+    idMaglia int NOT NULL,
+    email varchar(50) NOT NULL,
+    quantità int NOT NULL,
+    nomePersonalizzato varchar(20),
+    numeroPersonalizzato int(2),
+    costo float(7,2) NOT NULL,
+    FOREIGN KEY (idMaglia) REFERENCES Maglia(idMaglia),
+    FOREIGN KEY (email) REFERENCES Account(email)
+);
+
+CREATE TABLE Maglia_ordinata(
+    idRiga int PRIMARY KEY AUTO_INCREMENT,
+    idMaglia int NOT NULL,
+    idOrdine int NOT NULL,
+    quantità int NOT NULL,
+    nomePersonalizzato varchar(20),
+    numeroPersonalizzato int(2),
+    costo float(7,2) NOT NULL,
+    FOREIGN KEY (idMaglia) REFERENCES Maglia(idMaglia),
+    FOREIGN KEY (idOrdine) REFERENCES Ordine(idOrdine)
+);

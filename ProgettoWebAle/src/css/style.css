@@ -1,0 +1,250 @@
+body, h1, ul{
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    padding-inline: 0;
+}
+
+body{
+    background-color: #e4e4e4;
+}
+
+body header{
+    background-color: rgb(0, 127, 255);
+    text-align: center;
+    color: #fff; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2% 0;
+}
+
+header h1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+header h1 a:visited, header h1 a:link, main > div a:visited, main > div a:link {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    background-color: rgb(0, 127, 255);
+    float: right;
+    margin-right: 5%;
+    min-width: 100px;
+    text-align: end;
+    list-style: none;
+}
+
+header li {
+    display: inline-block;
+}
+
+header img, main section > img,  main section > div > img{
+    max-width: 35px;
+    max-height: 35px;
+    border-radius: 5px;
+}
+
+main > h2 {
+    color: rgb(0, 0, 225);
+    text-align: center;
+    font-size: 2em;
+}
+
+main > p {
+    margin: auto;
+    margin-bottom: 10px;
+    color: rgb(0, 127, 225);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+main section > img, main section > div > img{
+    background-color: rgb(0, 127, 225);
+}
+
+main section:last-child{
+    text-align: center;
+}
+
+main > section > div > a > img,  main section > div > img{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+main > section > div > img{
+    max-width: 100%;
+    max-height: 300px;
+}
+
+main > section > div{
+    text-align: center;
+}
+
+main > section{
+    background-color: #fff;
+    border: 3px solid #cacaca;
+}
+
+main > section > h2{
+    text-align: center;
+    padding: 0 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+main > section > h2 > a:visited, main > section > h2 > a:link{
+    text-decoration: none;
+    color: rgb(0, 0, 255);
+}
+
+h2 a:hover, h1 a:hover {
+    color: rgb(0,0,255);
+}
+
+header img:hover{
+    background-color: #fff;
+}
+
+header img:first-of-type{
+    float: left;
+    margin-left: 5%;
+}
+
+main section > img:hover,  main section > div > img:hover{
+    background-color: rgb(0, 0, 255);
+}
+
+body > footer{
+    background-color: rgb(0, 127, 255);
+    text-align: center;
+    color: #fff; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px 0 10px 0;
+}
+
+main > section{
+    padding: 20px 5%;
+    background-color: #fff;
+    text-align: center;
+}
+
+form{
+    padding: 20px 5%;
+    background-color: #fff;
+    margin-bottom: 10%;
+}
+
+form h2, main > section > h2{
+    color: rgb(0, 0, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 0 20px;
+}
+
+form fieldset{
+    text-align: left;
+}
+
+form ul, fieldset ul{
+    list-style: none;
+    padding: 10%;
+}
+
+form ul li{
+    margin-bottom: 25px;
+}
+
+form ul li:last-child{
+    text-align: right;
+}
+
+form ul li input[type="submit"]{
+    background-color:rgb(0, 0, 255);
+    color: #fff;
+    border: none;
+}
+
+form ul li input[type="submit"]:hover{
+    cursor: pointer;
+    color:rgb(255, 127, 0);
+}
+
+main form ul li img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+article p:last-child{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid rgb(0, 0, 255);
+    padding: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+table img{
+    max-width: 80%;
+}
+
+footer table {
+    color: white;
+}
+
+main section div{
+    padding: 5%;
+}
+
+main section div ul{
+    list-style: none;
+}
+
+form input[type="number"]{
+    max-width: 50px;
+}
+
+@media screen and (min-width:768px){
+
+    header img {
+        max-width: 45px;
+        max-height: 45px;
+    }
+
+    header h1 a {
+        font-size: larger;
+    }
+
+    header nav {
+        min-width: 180px;
+    }
+
+    header li {
+        margin-left: 15px;
+    }
+
+    main { 
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    main section img,  main section div img{
+        max-height: 300px;
+    }
+
+    main section{
+        width: 39%;
+    }
+
+    table{
+        width: 80%;
+        margin: 0 10%;    
+    }
+}
