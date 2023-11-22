@@ -5,16 +5,16 @@
                 <?php endif; ?>
                 <form method="POST">
                     <fieldset>
-                    <ul>
-                        <li>
+                    <ul class="login-wrap">
+                        <li class="login-field">
                             <label for="email">Email:</label><br/>
                             <input required type="text" id="email" name="email" />
                         </li>
-                        <li>
+                        <li class="login-field">
                             <label for="password">Password:</label><br/>
                             <input required type="password" id="password" name="password" />
                         </li>
-                        <li>
+                        <li class="login-field">
                             <input type="submit" name="invioLogin" value="Invia" />
                         </li>
                     </ul>

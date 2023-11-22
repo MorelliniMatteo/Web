@@ -232,7 +232,7 @@ form input[type="number"]{
         padding: 1%;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     main section img,  main section div img{
