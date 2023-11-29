@@ -1,0 +1,22 @@
+Ecco i tre standard fondamentali che sono alla base del Web:
+
+HTML (HyperText Markup Language):
+
+HTML è il linguaggio di markup utilizzato per creare la struttura di base delle pagine web. Consiste in un insieme di elementi (o "tag") che vengono utilizzati per definire la struttura logica dei contenuti, come testo, immagini, link ipertestuali, tabelle, paragrafi e altro ancora.
+Gli elementi HTML sono organizzati in una struttura ad albero, con un elemento <html> radice che contiene <head> (dove vengono inserite informazioni come il titolo della pagina e metadati) e <body> (dove si trovano i contenuti effettivi visualizzati sulla pagina).
+
+
+CSS (Cascading Style Sheets):
+
+CSS è un linguaggio utilizzato per definire l'aspetto e la presentazione dei contenuti HTML. Attraverso regole di stile, i fogli di stile CSS consentono di controllare il layout, il colore, la tipografia, le dimensioni e altri aspetti visivi di una pagina web. Il codice CSS si può essere collegato al nostro HTML in due modi:
+- o con il metodo "inline", ovvero che il nostro codice CSS viene inserito tra le righe di codice HTML senza dover creare un file esterno.
+- o con un file esterno che viene "linkato" al nostro file HTML tramite una riga di codice posta nell'<head>.
+Separando il contenuto (HTML) dalla presentazione (CSS), gli sviluppatori possono apportare modifiche allo stile di un'intera pagina o di un sito web senza dover modificare la struttura del contenuto. 
+
+
+HTTP (Hypertext Transfer Protocol):
+
+HTTP è il protocollo di comunicazione utilizzato per il trasferimento di informazioni tra un client (come un browser web) e un server (dove risiedono le risorse web). Funziona su un modello richiesta-risposta: il client invia una richiesta HTTP al server per ottenere risorse come pagine web, immagini o file e il server risponde con i dati richiesti.
+L'HTTP funziona tipicamente sul modello di richiesta "GET" per ottenere dati e "POST" per inviare dati a un server, ma esistono anche altri metodi HTTP come "PUT", "DELETE", "PATCH" e altri usati per operazioni specifiche.
+
+Questi tre standard lavorano insieme per consentire la creazione, la presentazione e la distribuzione di contenuti web su Internet, costituendo le fondamenta dell'esperienza di navigazione che viviamo quotidianamente durante la fruizione di pagine web.
