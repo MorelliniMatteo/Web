@@ -6,12 +6,19 @@ HTML è il linguaggio di markup utilizzato per creare la struttura di base delle
 Gli elementi HTML sono organizzati in una struttura ad albero, con un elemento <html> radice che contiene <head> (dove vengono inserite informazioni come il titolo della pagina e metadati) e <body> (dove si trovano i contenuti effettivi visualizzati sulla pagina).
 
 
-CSS (Cascading Style Sheets):
+URL (Uniform Resource Locator): 
 
-CSS è un linguaggio utilizzato per definire l'aspetto e la presentazione dei contenuti HTML. Attraverso regole di stile, i fogli di stile CSS consentono di controllare il layout, il colore, la tipografia, le dimensioni e altri aspetti visivi di una pagina web. Il codice CSS si può essere collegato al nostro HTML in due modi:
-- o con il metodo "inline", ovvero che il nostro codice CSS viene inserito tra le righe di codice HTML senza dover creare un file esterno.
-- o con un file esterno che viene "linkato" al nostro file HTML tramite una riga di codice posta nell'<head>.
-Separando il contenuto (HTML) dalla presentazione (CSS), gli sviluppatori possono apportare modifiche allo stile di un'intera pagina o di un sito web senza dover modificare la struttura del contenuto. 
+È l'indirizzo che identifica una risorsa specifica su internet. Consiste in una sequenza di caratteri che definisce il percorso per accedere a una pagina web, un'immagine, un file o qualsiasi altra risorsa online.
+Un URL è composto da diversi elementi che specificano la posizione e il tipo di risorsa a cui si sta accedendo. Ecco i principali componenti di un URL:
+1) Schema: Lo schema indica il protocollo utilizzato per accedere alla risorsa. Ad esempio, "http://" o "https://" per le pagine web, "ftp://" per il trasferimento di file, "mailto://" per indirizzi email, "file://" per file locali, ecc.
+
+2) Host: Il nome dell'host indica il server su cui risiede la risorsa desiderata. Può essere un dominio come "www.example.com" o un indirizzo IP numerico.
+
+3) Percorso: Il percorso specifica la posizione della risorsa all'interno del server. Ad esempio, "/pagina.html" per una pagina web specifica, "/immagini/foto.jpg" per un'immagine, ecc.
+
+4) Query string (opzionale): La query string è una serie di parametri che seguono il percorso e sono separati da un punto interrogativo "?" in un URL. Questi parametri forniscono informazioni aggiuntive alla risorsa richiesta. Ad esempio, in un URL come "https://www.example.com/pagina.html?parametro1=valore1&parametro2=valore2", la query string contiene i parametri "parametro1" e "parametro2" con i rispettivi valori.
+
+5) Fragment (opzionale): Il frammento, indicato da un simbolo "#" seguito da un identificatore, indica una sezione specifica all'interno della risorsa. È spesso utilizzato per indicare una posizione specifica in una pagina web. Ad esempio, in "https://www.example.com/pagina.html#sezione2", "#sezione2" indica la sezione 2 della pagina HTML.
 
 
 HTTP (Hypertext Transfer Protocol):
